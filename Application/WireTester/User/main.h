@@ -91,7 +91,7 @@ typedef struct{
 	uint8_t   MAC_Addr[6];   //MAC地址
 	uint8_t 	Mode_TestCap;		//电容阈值, 0:0.1uF, 1:0.47uF, 2:1.0uF, 3:4.7uF; 
 	uint8_t 	StudyMode;		//自学习规则, 0:导通测试, 1:导通+电阻
-	uint8_t 	Print_ID;		 //测试文件索引
+	uint8_t 	Print_Mode;		 //打印方式，0：并口打印 1：串口打印
 }
 WT_ConfigTypedef;  
 

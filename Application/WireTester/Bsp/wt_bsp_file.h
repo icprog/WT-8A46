@@ -240,8 +240,8 @@ void WT_PrintFolder_Init(void);
 uint8_t WT_PrintFiles_Init(char * filename,char * wire_mode);
 uint8_t WT_TestFiles_Create(uint8_t * path);
 uint8_t WT_TestFiles_Write(uint8_t * path, uint8_t * data);
-uint8_t WT_TestFile_Write2Flash (char * filename);
-uint8_t WT_TestFile_Write2SD(uint8_t * path);
+uint8_t WT_PrintFile_Write2Flash(void);
+uint8_t WT_PrintFile_ReadFlash(void);
 uint8_t WT_TestFiles_Write2card(uint8_t * path);
 //extern function
 

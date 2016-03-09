@@ -1674,7 +1674,7 @@ void get_system_time(char * date ,char * time)
 	sec    =  RTC_Time.Seconds;
 	min    =  RTC_Time.Minutes;
 	hour   =  RTC_Time.Hours;
-	sprintf((char *)timestr, "%02d-%02d-%02d", hour , min, sec);
+	sprintf((char *)timestr, "%02d:%02d:%02d", hour , min, sec);
 	//sprintf((char *)timestr, "%02d:%02d", hour , min);
 	//date
 	k_GetDate(&RTC_DateStructure);

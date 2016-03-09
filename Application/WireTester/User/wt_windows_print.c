@@ -52,7 +52,9 @@ extern GUI_CONST_STORAGE GUI_BITMAP bmbm_test_run;
 extern GUI_CONST_STORAGE GUI_BITMAP bmbm_test_ok;
 extern GUI_CONST_STORAGE GUI_BITMAP bmbm_test_fail;
 
-extern void UartInfr_Send_StartPrint_Cmd();
+extern void UartInfr_Send_StartPrint_Cmd(void);
+
+char str_mode[20];
 
 /*********************************************************************
 *
@@ -98,9 +100,9 @@ static const GUI_WIDGET_CREATE_INFO _aDialog[] = {
   { WINDOW_CreateIndirect, "Window", ID_WINDOW_0, 0, 0, 480, 222, 0, 0x0, 0 },
 	{ TEXT_CreateIndirect, "filelist", ID_TEXT_FILE_LIST, 20, 10, 120, 20, 0, 0x64, 0 },
 	{ DROPDOWN_CreateIndirect, "Dropdown", ID_DROPDOWN_0, 120,  10,  80,  20, 0, 0x0, 0 },
-	{ LISTBOX_CreateIndirect, "Listbox", ID_LISTBOX_0, 20, 30, 200, 130, 0, 0x0, 0 },
-	{ TEXT_CreateIndirect, "mode", ID_TEXT_MODE_SEL, 	20, 167, 80, 20, 0, 0x64, 0 },
-	{ EDIT_CreateIndirect, "Edit-mode", ID_EDIT_MODE, 100, 161, 120, 30, 0, 0x64, 0 },
+	{ LISTBOX_CreateIndirect, "Listbox", ID_LISTBOX_0, 20, 30, 200, 120, 0, 0x0, 0 },
+	{ TEXT_CreateIndirect, "mode", ID_TEXT_MODE_SEL, 	10, 160, 35, 20, 0, 0x64, 0 },
+	{ EDIT_CreateIndirect, "Edit-mode", ID_EDIT_MODE, 45, 158, 190, 30, 0, 0x64, 0 },
 	{ IMAGE_CreateIndirect, "Image", ID_IMAGE_0, 262, 45, 190, 140, 0, 0, 0 }, 
   { TEXT_CreateIndirect, "print_stat", ID_TEXT_PRINT_STAT, 320, 20, 100, 20, 0, 0x64, 0 },
 	{ TEXT_CreateIndirect, "warning", ID_TEXT_WARN, 20, 200, 120, 20, 0, 0x64, 0 },
@@ -168,13 +170,23 @@ static void _cbDialog(WM_MESSAGE * pMsg) {
 		
 		hItem = WM_GetDialogItem(pMsg->hWin, ID_TEXT_MODE_SEL);
 		TEXT_SetFont(hItem,&GUI_FontHZ_Song_16);
-		TEXT_SetText(hItem, "线束型号:");  	
+		TEXT_SetText(hItem, "型号:");  	
+		
 		
 		hItem = WM_GetDialogItem(pMsg->hWin, ID_EDIT_MODE);
 		EDIT_SetFont(hItem,GUI_FONT_32_1);
 		EDIT_SetMaxLen(hItem, 25);
 		EDIT_EnableBlink(hItem, 600, 1);
 		EDIT_SetInsertMode(hItem,1);	
+		if(strlen(str_mode) == 0)
+		{
+			EDIT_SetText(hItem, "8001018049");  	
+		}
+		else 
+		{
+			WT_PrintFile_ReadFlash();
+			EDIT_SetText(hItem, str_mode);
+		}
 		cursorindex=EDIT_GetCursorCharPos(hItem);
 		
 		hItem = WM_GetDialogItem(pMsg->hWin, ID_TEXT_WARN);
@@ -252,7 +264,6 @@ static void Startup(WM_HWIN hWin, uint16_t xpos, uint16_t ypos)
 	static uint8_t last_stat = 0;//
 	uint8_t curr_stat = 0;//
 	
-	char str_mode[30];
 
 	wt_SetText_Title("");
 	wt_SetText_Menu(wt_print.name);
@@ -282,10 +293,10 @@ static void Startup(WM_HWIN hWin, uint16_t xpos, uint16_t ypos)
 			{
 				osDelay(10);
 			}
-			memset(str_mode,0,30);
+			memset(str_mode,0,20);
 			hItem = WM_GetDialogItem(hWindow, ID_EDIT_MODE);
-			EDIT_GetText(hItem,str_mode,30);
-			if(strlen(str_mode)==0)
+			EDIT_GetText(hItem,str_mode,20);
+			if(strlen(str_mode)==0)//线束型号输入检测
 			{
 				hItem = WM_GetDialogItem(hWindow, ID_TEXT_WARN);
 				WM_ShowWindow(hItem);
@@ -299,12 +310,25 @@ static void Startup(WM_HWIN hWin, uint16_t xpos, uint16_t ypos)
 			}
 			
 			hItem = WM_GetDialogItem(hWindow, ID_LISTBOX_0);
-			if(LISTBOX_GetNumItems(hItem) ==0 ) 	goto loop1;;
+			//if(LISTBOX_GetNumItems(hItem) ==0 ) 	goto loop1;;
+			if(LISTBOX_GetNumItems(hItem) ==0 ) //如果SD卡或U盘中没有文件，选择从Flash中读取打印文件
+			{
+				WT_PrintFile_ReadFlash();
+				osDelay(50);
+				memset(str_mode,0,20);
+				hItem = WM_GetDialogItem(hWindow, ID_EDIT_MODE);
+				EDIT_GetText(hItem,str_mode,20);
+				WT_PrintFile_Write2Flash();
+				goto print_start;
+			}
+			
 			PrintFolder.number_CurrentFile=LISTBOX_GetSel(hItem);
 			//打开prn文件
 			res=WT_PrintFiles_Init((char *)PrintFolder.FilesName[LISTBOX_GetSel(hItem)],str_mode);//0-not init, 1-inited, 2-no files, 3-hardware error, 4-no folder
 			if(res == 1)
 			{
+				WT_PrintFile_Write2Flash();
+				print_start:
 				//osMessagePut(UartCOM2Event, UartCOM2_TX_Event, 0);//开始打印
 				hItem = WM_GetDialogItem(hWindow, ID_TEXT_PRINT_STAT);
 				WM_ShowWindow(hItem);
@@ -314,8 +338,8 @@ static void Startup(WM_HWIN hWin, uint16_t xpos, uint16_t ypos)
 				BUTTON_SetBkColor(hItem,BUTTON_CI_UNPRESSED, GUI_GRAY);
 				PrintFile.print_status = 1;
 				print_stat = 1;
-				WT_Config.Print_ID = PrintFolder.number_CurrentFile;//保持打印文件序号
-				WT_Config_PrintID_Save();
+//				WT_Config.Print_ID = PrintFolder.number_CurrentFile;//保持打印文件序号
+//				WT_Config_PrintID_Save();
 				
 			}
 			else

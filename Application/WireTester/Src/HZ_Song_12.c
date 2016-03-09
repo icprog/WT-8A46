@@ -1398,21 +1398,6 @@ GUI_CONST_STORAGE unsigned char acGUI_FontHZ_Song_12_03A9[ 24] = { /* code 03A9,
   ________,________,
   ________,________};
 
-/* Start of unicode area <General Punctuation> */
-GUI_CONST_STORAGE unsigned char acGUI_FontHZ_Song_12_2026[ 24] = { /* code 2026, HORIZONTAL ELLIPSIS */
-  ________,________,
-  ________,________,
-  ________,________,
-  ________,________,
-  XXX_XXX_,XXX_____,
-  XXX_XXX_,XXX_____,
-  ________,________,
-  ________,________,
-  ________,________,
-  ________,________,
-  ________,________,
-  ________,________};
-
 /* Start of unicode area <CJK Symbols and Punctuation> */
 GUI_CONST_STORAGE unsigned char acGUI_FontHZ_Song_12_3002[ 24] = { /* code 3002, IDEOGRAPHIC FULL STOP */
   ________,________,
@@ -1483,6 +1468,20 @@ GUI_CONST_STORAGE unsigned char acGUI_FontHZ_Song_12_4E2D[ 24] = { /* code 4E2D 
   _XX__XX_,_XX_____,
   _____XX_,________,
   _____XX_,________,
+  _____XX_,________};
+
+GUI_CONST_STORAGE unsigned char acGUI_FontHZ_Song_12_4E32[ 24] = { /* code 4E32 */
+  _____XX_,________,
+  _XXXXXXX,XXX_____,
+  _XX__XX_,_XX_____,
+  _XX__XX_,_XX_____,
+  _XXXXXXX,XXX_____,
+  _____XX_,________,
+  XXXXXXXX,XXXX____,
+  XX___XX_,__XX____,
+  XX___XX_,__XX____,
+  XXXXXXXX,XXXX____,
+  XX___XX_,__XX____,
   _____XX_,________};
 
 GUI_CONST_STORAGE unsigned char acGUI_FontHZ_Song_12_4E3A[ 24] = { /* code 4E3A */
@@ -1568,20 +1567,6 @@ GUI_CONST_STORAGE unsigned char acGUI_FontHZ_Song_12_4EAE[ 24] = { /* code 4EAE 
   __XXXXXX,X_______,
   __XX___X,X_XX____,
   XXX_____,XXXX____};
-
-GUI_CONST_STORAGE unsigned char acGUI_FontHZ_Song_12_4ECE[ 24] = { /* code 4ECE */
-  ___XX__X,X_______,
-  ___XX__X,X_______,
-  ___XX__X,X_______,
-  ___XX__X,X_______,
-  ___XX__X,X_______,
-  __XXXX_X,X_______,
-  __XXXXXX,XX______,
-  __XXXXXX,XX______,
-  __XXXXXX,XX______,
-  _XX__XX_,_XX_____,
-  _XX__XX_,_XX_____,
-  XX__XX__,__XX____};
 
 GUI_CONST_STORAGE unsigned char acGUI_FontHZ_Song_12_4EF6[ 24] = { /* code 4EF6 */
   __XX___X,X_______,
@@ -2493,20 +2478,6 @@ GUI_CONST_STORAGE unsigned char acGUI_FontHZ_Song_12_5BFC[ 24] = { /* code 5BFC 
   ___XX___,XX______,
   ______XX,XX______};
 
-GUI_CONST_STORAGE unsigned char acGUI_FontHZ_Song_12_5C31[ 24] = { /* code 5C31 */
-  _XX___XX,________,
-  __XX__XX,XX______,
-  XXXXXXXX,_XX_____,
-  _____XXX,XXXX____,
-  XXXXXXXX,XX______,
-  XX__XXXX,XX______,
-  XX__XXXX,XX______,
-  XXXXXXXX,XX______,
-  __XX__XX,XX______,
-  XXXXX_XX,XXXX____,
-  XXXXXXXX,XXXX____,
-  _XXX_XX_,_XXX____};
-
 GUI_CONST_STORAGE unsigned char acGUI_FontHZ_Song_12_5C55[ 24] = { /* code 5C55 */
   _XXXXXXX,XXXX____,
   _XX_____,__XX____,
@@ -2576,6 +2547,20 @@ GUI_CONST_STORAGE unsigned char acGUI_FontHZ_Song_12_5E74[ 24] = { /* code 5E74 
   ______XX,________,
   ______XX,________,
   ______XX,________};
+
+GUI_CONST_STORAGE unsigned char acGUI_FontHZ_Song_12_5E76[ 24] = { /* code 5E76 */
+  __XX____,XX______,
+  ___XX__X,X_______,
+  ________,________,
+  _XXXXXXX,XXX_____,
+  ___XX__X,X_______,
+  ___XX__X,X_______,
+  ___XX__X,X_______,
+  XXXXXXXX,XXXX____,
+  ___XX__X,X_______,
+  __XX___X,X_______,
+  __XX___X,X_______,
+  _XX____X,X_______};
 
 GUI_CONST_STORAGE unsigned char acGUI_FontHZ_Song_12_5E8F[ 24] = { /* code 5E8F */
   ______XX,________,
@@ -3865,20 +3850,6 @@ GUI_CONST_STORAGE unsigned char acGUI_FontHZ_Song_12_7EDF[ 24] = { /* code 7EDF 
   XXX__XX_,XXXX____,
   ____XX__,_XXX____};
 
-GUI_CONST_STORAGE unsigned char acGUI_FontHZ_Song_12_7EEA[ 24] = { /* code 7EEA */
-  __XX__XX,________,
-  __XX__XX,__XX____,
-  _XX__XXX,XXX_____,
-  XX_XX_XX,XX______,
-  XXXXXXXX,XXXX____,
-  __XX__XX,________,
-  _XX__XXX,XXX_____,
-  XXXXXXX_,_XX_____,
-  _____XXX,XXX_____,
-  __XXXXX_,_XX_____,
-  XXX__XXX,XXX_____,
-  _____XX_,_XX_____};
-
 GUI_CONST_STORAGE unsigned char acGUI_FontHZ_Song_12_7F16[ 24] = { /* code 7F16 */
   _XX____X,X_______,
   _XX_XXXX,XXXX____,
@@ -4748,7 +4719,7 @@ GUI_CONST_STORAGE unsigned char acGUI_FontHZ_Song_12_FF1A[ 24] = { /* code FF1A,
   ________,________,
   ________,________};
 
-GUI_CONST_STORAGE GUI_CHARINFO GUI_FontHZ_Song_12_CharInfo[336] = {
+GUI_CONST_STORAGE GUI_CHARINFO GUI_FontHZ_Song_12_CharInfo[334] = {
    {   7,   7,  1, acGUI_FontHZ_Song_12_0020 } /* code 0020 */
   ,{   7,   7,  1, acGUI_FontHZ_Song_12_0021 } /* code 0021 */
   ,{   7,   7,  1, acGUI_FontHZ_Song_12_0022 } /* code 0022 */
@@ -4846,19 +4817,18 @@ GUI_CONST_STORAGE GUI_CHARINFO GUI_FontHZ_Song_12_CharInfo[336] = {
   ,{   7,   7,  1, acGUI_FontHZ_Song_12_007E } /* code 007E */
   ,{   7,   7,  1, acGUI_FontHZ_Song_12_00A9 } /* code 00A9 */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_03A9 } /* code 03A9 */
-  ,{  13,  13,  2, acGUI_FontHZ_Song_12_2026 } /* code 2026 */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_3002 } /* code 3002 */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_4E00 } /* code 4E00 */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_4E0B } /* code 4E0B */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_4E0D } /* code 4E0D */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_4E2D } /* code 4E2D */
+  ,{  13,  13,  2, acGUI_FontHZ_Song_12_4E32 } /* code 4E32 */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_4E3A } /* code 4E3A */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_4E3B } /* code 4E3B */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_4E4B } /* code 4E4B */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_4E60 } /* code 4E60 */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_4E8C } /* code 4E8C */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_4EAE } /* code 4EAE */
-  ,{  13,  13,  2, acGUI_FontHZ_Song_12_4ECE } /* code 4ECE */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_4EF6 } /* code 4EF6 */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_4EFB } /* code 4EFB */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_4EFD } /* code 4EFD */
@@ -4924,12 +4894,12 @@ GUI_CONST_STORAGE GUI_CHARINFO GUI_FontHZ_Song_12_CharInfo[336] = {
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_5BB9 } /* code 5BB9 */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_5BC6 } /* code 5BC6 */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_5BFC } /* code 5BFC */
-  ,{  13,  13,  2, acGUI_FontHZ_Song_12_5C31 } /* code 5C31 */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_5C55 } /* code 5C55 */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_5DDE } /* code 5DDE */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_5DF2 } /* code 5DF2 */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_5E38 } /* code 5E38 */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_5E74 } /* code 5E74 */
+  ,{  13,  13,  2, acGUI_FontHZ_Song_12_5E76 } /* code 5E76 */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_5E8F } /* code 5E8F */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_5EA6 } /* code 5EA6 */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_5F00 } /* code 5F00 */
@@ -5022,7 +4992,6 @@ GUI_CONST_STORAGE GUI_CHARINFO GUI_FontHZ_Song_12_CharInfo[336] = {
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_7ED3 } /* code 7ED3 */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_7EDC } /* code 7EDC */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_7EDF } /* code 7EDF */
-  ,{  13,  13,  2, acGUI_FontHZ_Song_12_7EEA } /* code 7EEA */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_7F16 } /* code 7F16 */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_7F51 } /* code 7F51 */
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_7F6E } /* code 7F6E */
@@ -5087,1556 +5056,1542 @@ GUI_CONST_STORAGE GUI_CHARINFO GUI_FontHZ_Song_12_CharInfo[336] = {
   ,{  13,  13,  2, acGUI_FontHZ_Song_12_FF1A } /* code FF1A */
 };
 
-GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop236 = {
+GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop234 = {
    0xFF1A /* first character */
   ,0xFF1A /* last character  */
-  ,&GUI_FontHZ_Song_12_CharInfo[335] /* address of first character */
+  ,&GUI_FontHZ_Song_12_CharInfo[333] /* address of first character */
   ,(GUI_CONST_STORAGE GUI_FONT_PROP *)0 /* pointer to next GUI_FONT_PROP */
 };
 
-GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop235 = {
+GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop233 = {
    0xFF0C /* first character */
   ,0xFF0C /* last character  */
-  ,&GUI_FontHZ_Song_12_CharInfo[334] /* address of first character */
-  ,&GUI_FontHZ_Song_12_Prop236 /* pointer to next GUI_FONT_PROP */
-};
-
-GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop234 = {
-   0xFF01 /* first character */
-  ,0xFF01 /* last character  */
-  ,&GUI_FontHZ_Song_12_CharInfo[333] /* address of first character */
-  ,&GUI_FontHZ_Song_12_Prop235 /* pointer to next GUI_FONT_PROP */
-};
-
-GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop233 = {
-   0x9ED8 /* first character */
-  ,0x9ED8 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[332] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop234 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop232 = {
-   0x9AD8 /* first character */
-  ,0x9AD8 /* last character  */
+   0xFF01 /* first character */
+  ,0xFF01 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[331] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop233 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop231 = {
-   0x9879 /* first character */
-  ,0x9879 /* last character  */
+   0x9ED8 /* first character */
+  ,0x9ED8 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[330] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop232 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop230 = {
-   0x97F3 /* first character */
-  ,0x97F3 /* last character  */
+   0x9AD8 /* first character */
+  ,0x9AD8 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[329] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop231 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop229 = {
-   0x9650 /* first character */
-  ,0x9650 /* last character  */
+   0x9879 /* first character */
+  ,0x9879 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[328] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop230 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop228 = {
-   0x9646 /* first character */
-  ,0x9646 /* last character  */
+   0x97F3 /* first character */
+  ,0x97F3 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[327] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop229 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop227 = {
-   0x963B /* first character */
-  ,0x963B /* last character  */
+   0x9650 /* first character */
+  ,0x9650 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[326] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop228 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop226 = {
-   0x9633 /* first character */
-  ,0x9633 /* last character  */
+   0x9646 /* first character */
+  ,0x9646 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[325] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop227 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop225 = {
-   0x9608 /* first character */
-  ,0x9608 /* last character  */
+   0x963B /* first character */
+  ,0x963B /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[324] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop226 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop224 = {
-   0x95F4 /* first character */
-  ,0x95F4 /* last character  */
+   0x9633 /* first character */
+  ,0x9633 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[323] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop225 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop223 = {
-   0x95ED /* first character */
-  ,0x95ED /* last character  */
+   0x9608 /* first character */
+  ,0x9608 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[322] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop224 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop222 = {
-   0x957F /* first character */
-  ,0x957F /* last character  */
+   0x95F4 /* first character */
+  ,0x95F4 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[321] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop223 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop221 = {
-   0x9519 /* first character */
-  ,0x9519 /* last character  */
+   0x95ED /* first character */
+  ,0x95ED /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[320] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop222 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop220 = {
-   0x9501 /* first character */
-  ,0x9501 /* last character  */
+   0x957F /* first character */
+  ,0x957F /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[319] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop221 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop219 = {
-   0x94C3 /* first character */
-  ,0x94C3 /* last character  */
+   0x9519 /* first character */
+  ,0x9519 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[318] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop220 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop218 = {
-   0x94A5 /* first character */
-  ,0x94A5 /* last character  */
+   0x9501 /* first character */
+  ,0x9501 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[317] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop219 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop217 = {
-   0x91CF /* first character */
-  ,0x91CF /* last character  */
+   0x94C3 /* first character */
+  ,0x94C3 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[316] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop218 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop216 = {
-   0x91CD /* first character */
-  ,0x91CD /* last character  */
+   0x94A5 /* first character */
+  ,0x94A5 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[315] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop217 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop215 = {
-   0x914D /* first character */
-  ,0x914D /* last character  */
+   0x91CF /* first character */
+  ,0x91CF /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[314] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop216 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop214 = {
-   0x9065 /* first character */
-  ,0x9065 /* last character  */
+   0x91CD /* first character */
+  ,0x91CD /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[313] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop215 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop213 = {
-   0x9053 /* first character */
-  ,0x9053 /* last character  */
+   0x914D /* first character */
+  ,0x914D /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[312] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop214 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop212 = {
-   0x9020 /* first character */
-  ,0x9020 /* last character  */
+   0x9065 /* first character */
+  ,0x9065 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[311] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop213 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop211 = {
-   0x901A /* first character */
-  ,0x901A /* last character  */
+   0x9053 /* first character */
+  ,0x9053 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[310] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop212 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop210 = {
-   0x9009 /* first character */
-  ,0x9009 /* last character  */
+   0x9020 /* first character */
+  ,0x9020 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[309] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop211 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop209 = {
-   0x9000 /* first character */
-  ,0x9000 /* last character  */
+   0x901A /* first character */
+  ,0x901A /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[308] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop210 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop208 = {
-   0x8FDE /* first character */
-  ,0x8FDE /* last character  */
+   0x9009 /* first character */
+  ,0x9009 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[307] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop209 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop207 = {
-   0x8FDB /* first character */
-  ,0x8FDB /* last character  */
+   0x9000 /* first character */
+  ,0x9000 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[306] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop208 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop206 = {
-   0x8FD4 /* first character */
-  ,0x8FD4 /* last character  */
+   0x8FDE /* first character */
+  ,0x8FDE /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[305] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop207 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop205 = {
-   0x8FD0 /* first character */
-  ,0x8FD0 /* last character  */
+   0x8FDB /* first character */
+  ,0x8FDB /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[304] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop206 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop204 = {
-   0x8FC7 /* first character */
-  ,0x8FC7 /* last character  */
+   0x8FD4 /* first character */
+  ,0x8FD4 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[303] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop205 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop203 = {
-   0x8F93 /* first character */
-  ,0x8F93 /* last character  */
+   0x8FD0 /* first character */
+  ,0x8FD0 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[302] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop204 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop202 = {
-   0x8F91 /* first character */
-  ,0x8F91 /* last character  */
+   0x8FC7 /* first character */
+  ,0x8FC7 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[301] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop203 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop201 = {
-   0x8F6F /* first character */
-  ,0x8F6F /* last character  */
+   0x8F93 /* first character */
+  ,0x8F93 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[300] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop202 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop200 = {
-   0x8DEF /* first character */
-  ,0x8DEF /* last character  */
+   0x8F91 /* first character */
+  ,0x8F91 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[299] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop201 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop199 = {
-   0x8D25 /* first character */
-  ,0x8D25 /* last character  */
+   0x8F6F /* first character */
+  ,0x8F6F /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[298] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop200 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop198 = {
-   0x8BFB /* first character */
-  ,0x8BFB /* last character  */
+   0x8DEF /* first character */
+  ,0x8DEF /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[297] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop199 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop197 = {
-   0x8BF7 /* first character */
-  ,0x8BF7 /* last character  */
+   0x8D25 /* first character */
+  ,0x8D25 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[296] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop198 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop196 = {
-   0x8BEF /* first character */
-  ,0x8BEF /* last character  */
+   0x8BFB /* first character */
+  ,0x8BFB /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[295] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop197 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop195 = {
-   0x8BED /* first character */
-  ,0x8BED /* last character  */
+   0x8BF7 /* first character */
+  ,0x8BF7 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[294] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop196 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop194 = {
-   0x8BD5 /* first character */
-  ,0x8BD5 /* last character  */
+   0x8BEF /* first character */
+  ,0x8BEF /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[293] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop195 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop193 = {
-   0x8BBE /* first character */
-  ,0x8BBE /* last character  */
+   0x8BED /* first character */
+  ,0x8BED /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[292] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop194 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop192 = {
-   0x8BA4 /* first character */
-  ,0x8BA4 /* last character  */
+   0x8BD5 /* first character */
+  ,0x8BD5 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[291] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop193 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop191 = {
-   0x8B66 /* first character */
-  ,0x8B66 /* last character  */
+   0x8BBE /* first character */
+  ,0x8BBE /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[290] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop192 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop190 = {
-   0x8A00 /* first character */
-  ,0x8A00 /* last character  */
+   0x8BA4 /* first character */
+  ,0x8BA4 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[289] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop191 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop189 = {
-   0x89E3 /* first character */
-  ,0x89E3 /* last character  */
+   0x8B66 /* first character */
+  ,0x8B66 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[288] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop190 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop188 = {
-   0x89C4 /* first character */
-  ,0x89C4 /* last character  */
+   0x8A00 /* first character */
+  ,0x8A00 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[287] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop189 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop187 = {
-   0x88AB /* first character */
-  ,0x88AB /* last character  */
+   0x89E3 /* first character */
+  ,0x89E3 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[286] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop188 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop186 = {
-   0x884C /* first character */
-  ,0x884C /* last character  */
+   0x89C4 /* first character */
+  ,0x89C4 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[285] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop187 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop185 = {
-   0x83DC /* first character */
-  ,0x83DC /* last character  */
+   0x88AB /* first character */
+  ,0x88AB /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[284] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop186 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop184 = {
-   0x82F1 /* first character */
-  ,0x82F1 /* last character  */
+   0x884C /* first character */
+  ,0x884C /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[283] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop185 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop183 = {
-   0x82CF /* first character */
-  ,0x82CF /* last character  */
+   0x83DC /* first character */
+  ,0x83DC /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[282] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop184 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop182 = {
-   0x8282 /* first character */
-  ,0x8282 /* last character  */
+   0x82F1 /* first character */
+  ,0x82F1 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[281] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop183 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop181 = {
-   0x81EA /* first character */
-  ,0x81EA /* last character  */
+   0x82CF /* first character */
+  ,0x82CF /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[280] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop182 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop180 = {
-   0x80FD /* first character */
-  ,0x80FD /* last character  */
+   0x8282 /* first character */
+  ,0x8282 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[279] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop181 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop179 = {
-   0x80A1 /* first character */
-  ,0x80A1 /* last character  */
+   0x81EA /* first character */
+  ,0x81EA /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[278] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop180 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop178 = {
-   0x8054 /* first character */
-  ,0x8054 /* last character  */
+   0x80FD /* first character */
+  ,0x80FD /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[277] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop179 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop177 = {
-   0x7F6E /* first character */
-  ,0x7F6E /* last character  */
+   0x80A1 /* first character */
+  ,0x80A1 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[276] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop178 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop176 = {
-   0x7F51 /* first character */
-  ,0x7F51 /* last character  */
+   0x8054 /* first character */
+  ,0x8054 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[275] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop177 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop175 = {
-   0x7F16 /* first character */
-  ,0x7F16 /* last character  */
+   0x7F6E /* first character */
+  ,0x7F6E /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[274] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop176 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop174 = {
-   0x7EEA /* first character */
-  ,0x7EEA /* last character  */
+   0x7F51 /* first character */
+  ,0x7F51 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[273] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop175 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop173 = {
-   0x7EDF /* first character */
-  ,0x7EDF /* last character  */
+   0x7F16 /* first character */
+  ,0x7F16 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[272] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop174 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop172 = {
-   0x7EDC /* first character */
-  ,0x7EDC /* last character  */
+   0x7EDF /* first character */
+  ,0x7EDF /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[271] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop173 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop171 = {
-   0x7ED3 /* first character */
-  ,0x7ED3 /* last character  */
+   0x7EDC /* first character */
+  ,0x7EDC /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[270] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop172 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop170 = {
-   0x7EC4 /* first character */
-  ,0x7EC4 /* last character  */
+   0x7ED3 /* first character */
+  ,0x7ED3 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[269] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop171 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop169 = {
-   0x7EBF /* first character */
-  ,0x7EBF /* last character  */
+   0x7EC4 /* first character */
+  ,0x7EC4 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[268] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop170 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop168 = {
-   0x7EA7 /* first character */
-  ,0x7EA7 /* last character  */
+   0x7EBF /* first character */
+  ,0x7EBF /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[267] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop169 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop167 = {
-   0x7CFB /* first character */
-  ,0x7CFB /* last character  */
+   0x7EA7 /* first character */
+  ,0x7EA7 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[266] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop168 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop166 = {
-   0x7C7B /* first character */
-  ,0x7C7B /* last character  */
+   0x7CFB /* first character */
+  ,0x7CFB /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[265] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop167 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop165 = {
-   0x7BA1 /* first character */
-  ,0x7BA1 /* last character  */
+   0x7C7B /* first character */
+  ,0x7C7B /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[264] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop166 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop164 = {
-   0x7B49 /* first character */
-  ,0x7B49 /* last character  */
+   0x7BA1 /* first character */
+  ,0x7BA1 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[263] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop165 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop163 = {
-   0x7AEF /* first character */
-  ,0x7AEF /* last character  */
+   0x7B49 /* first character */
+  ,0x7B49 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[262] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop164 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop162 = {
-   0x7A7A /* first character */
-  ,0x7A7A /* last character  */
+   0x7AEF /* first character */
+  ,0x7AEF /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[261] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop163 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop161 = {
-   0x7A0B /* first character */
-  ,0x7A0B /* last character  */
+   0x7A7A /* first character */
+  ,0x7A7A /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[260] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop162 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop160 = {
-   0x79F0 /* first character */
-  ,0x79F0 /* last character  */
+   0x7A0B /* first character */
+  ,0x7A0B /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[259] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop161 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop159 = {
-   0x79D8 /* first character */
-  ,0x79D8 /* last character  */
+   0x79F0 /* first character */
+  ,0x79F0 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[258] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop160 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop158 = {
-   0x79D1 /* first character */
-  ,0x79D2 /* last character  */
-  ,&GUI_FontHZ_Song_12_CharInfo[256] /* address of first character */
+   0x79D8 /* first character */
+  ,0x79D8 /* last character  */
+  ,&GUI_FontHZ_Song_12_CharInfo[257] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop159 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop157 = {
-   0x793A /* first character */
-  ,0x793A /* last character  */
+   0x79D1 /* first character */
+  ,0x79D2 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[255] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop158 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop156 = {
-   0x786E /* first character */
-  ,0x786E /* last character  */
+   0x793A /* first character */
+  ,0x793A /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[254] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop157 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop155 = {
-   0x786C /* first character */
-  ,0x786C /* last character  */
+   0x786E /* first character */
+  ,0x786E /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[253] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop156 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop154 = {
-   0x7801 /* first character */
-  ,0x7801 /* last character  */
+   0x786C /* first character */
+  ,0x786C /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[252] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop155 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop153 = {
-   0x77ED /* first character */
-  ,0x77ED /* last character  */
+   0x7801 /* first character */
+  ,0x7801 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[251] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop154 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop152 = {
-   0x76EE /* first character */
-  ,0x76EE /* last character  */
+   0x77ED /* first character */
+  ,0x77ED /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[250] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop153 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop151 = {
-   0x76D8 /* first character */
-  ,0x76D8 /* last character  */
+   0x76EE /* first character */
+  ,0x76EE /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[249] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop152 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop150 = {
-   0x7684 /* first character */
-  ,0x7684 /* last character  */
+   0x76D8 /* first character */
+  ,0x76D8 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[248] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop151 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop149 = {
-   0x767B /* first character */
-  ,0x767B /* last character  */
+   0x7684 /* first character */
+  ,0x7684 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[247] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop150 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop148 = {
-   0x7535 /* first character */
-  ,0x7535 /* last character  */
+   0x767B /* first character */
+  ,0x767B /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[246] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop149 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop147 = {
-   0x7528 /* first character */
-  ,0x7528 /* last character  */
+   0x7535 /* first character */
+  ,0x7535 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[245] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop148 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop146 = {
-   0x7406 /* first character */
-  ,0x7406 /* last character  */
+   0x7528 /* first character */
+  ,0x7528 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[244] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop147 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop145 = {
-   0x73AF /* first character */
-  ,0x73AF /* last character  */
+   0x7406 /* first character */
+  ,0x7406 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[243] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop146 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop144 = {
-   0x72B6 /* first character */
-  ,0x72B6 /* last character  */
+   0x73AF /* first character */
+  ,0x73AF /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[242] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop145 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop143 = {
-   0x7248 /* first character */
-  ,0x7248 /* last character  */
+   0x72B6 /* first character */
+  ,0x72B6 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[241] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop144 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop142 = {
-   0x70B9 /* first character */
-  ,0x70B9 /* last character  */
+   0x7248 /* first character */
+  ,0x7248 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[240] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop143 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop141 = {
-   0x6D88 /* first character */
-  ,0x6D88 /* last character  */
+   0x70B9 /* first character */
+  ,0x70B9 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[239] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop142 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop140 = {
-   0x6D4B /* first character */
-  ,0x6D4B /* last character  */
+   0x6D88 /* first character */
+  ,0x6D88 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[238] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop141 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop139 = {
-   0x6CD5 /* first character */
-  ,0x6CD5 /* last character  */
+   0x6D4B /* first character */
+  ,0x6D4B /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[237] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop140 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop138 = {
-   0x6CA1 /* first character */
-  ,0x6CA1 /* last character  */
+   0x6CD5 /* first character */
+  ,0x6CD5 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[236] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop139 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop137 = {
-   0x6B62 /* first character */
-  ,0x6B63 /* last character  */
-  ,&GUI_FontHZ_Song_12_CharInfo[234] /* address of first character */
+   0x6CA1 /* first character */
+  ,0x6CA1 /* last character  */
+  ,&GUI_FontHZ_Song_12_CharInfo[235] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop138 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop136 = {
-   0x6B21 /* first character */
-  ,0x6B21 /* last character  */
+   0x6B62 /* first character */
+  ,0x6B63 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[233] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop137 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop135 = {
-   0x6A21 /* first character */
-  ,0x6A21 /* last character  */
+   0x6B21 /* first character */
+  ,0x6B21 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[232] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop136 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop134 = {
-   0x68C0 /* first character */
-  ,0x68C0 /* last character  */
+   0x6A21 /* first character */
+  ,0x6A21 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[231] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop135 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop133 = {
-   0x679C /* first character */
-  ,0x679C /* last character  */
+   0x68C0 /* first character */
+  ,0x68C0 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[230] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop134 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop132 = {
-   0x6781 /* first character */
-  ,0x6781 /* last character  */
+   0x679C /* first character */
+  ,0x679C /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[229] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop133 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop131 = {
-   0x677F /* first character */
-  ,0x677F /* last character  */
+   0x6781 /* first character */
+  ,0x6781 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[228] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop132 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop130 = {
-   0x6761 /* first character */
-  ,0x6761 /* last character  */
+   0x677F /* first character */
+  ,0x677F /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[227] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop131 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop129 = {
-   0x675F /* first character */
-  ,0x675F /* last character  */
+   0x6761 /* first character */
+  ,0x6761 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[226] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop130 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop128 = {
-   0x6743 /* first character */
-  ,0x6743 /* last character  */
+   0x675F /* first character */
+  ,0x675F /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[225] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop129 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop127 = {
-   0x673A /* first character */
-  ,0x673A /* last character  */
+   0x6743 /* first character */
+  ,0x6743 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[224] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop128 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop126 = {
-   0x672C /* first character */
-  ,0x672C /* last character  */
+   0x673A /* first character */
+  ,0x673A /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[223] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop127 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop125 = {
-   0x672A /* first character */
-  ,0x672A /* last character  */
+   0x672C /* first character */
+  ,0x672C /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[222] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop126 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop124 = {
-   0x671F /* first character */
-  ,0x671F /* last character  */
+   0x672A /* first character */
+  ,0x672A /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[221] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop125 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop123 = {
-   0x670D /* first character */
-  ,0x670D /* last character  */
+   0x671F /* first character */
+  ,0x671F /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[220] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop124 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop122 = {
-   0x6708 /* first character */
-  ,0x6709 /* last character  */
-  ,&GUI_FontHZ_Song_12_CharInfo[218] /* address of first character */
+   0x670D /* first character */
+  ,0x670D /* last character  */
+  ,&GUI_FontHZ_Song_12_CharInfo[219] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop123 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop121 = {
-   0x6700 /* first character */
-  ,0x6700 /* last character  */
+   0x6708 /* first character */
+  ,0x6709 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[217] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop122 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop120 = {
-   0x663E /* first character */
-  ,0x663E /* last character  */
+   0x6700 /* first character */
+  ,0x6700 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[216] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop121 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop119 = {
-   0x662F /* first character */
-  ,0x662F /* last character  */
+   0x663E /* first character */
+  ,0x663E /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[215] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop120 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop118 = {
-   0x661F /* first character */
-  ,0x661F /* last character  */
+   0x662F /* first character */
+  ,0x662F /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[214] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop119 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop117 = {
-   0x65F6 /* first character */
-  ,0x65F6 /* last character  */
+   0x661F /* first character */
+  ,0x661F /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[213] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop118 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop116 = {
-   0x65E5 /* first character */
-  ,0x65E5 /* last character  */
+   0x65F6 /* first character */
+  ,0x65F6 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[212] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop117 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop115 = {
-   0x65E0 /* first character */
-  ,0x65E0 /* last character  */
+   0x65E5 /* first character */
+  ,0x65E5 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[211] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop116 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop114 = {
-   0x65B0 /* first character */
-  ,0x65B0 /* last character  */
+   0x65E0 /* first character */
+  ,0x65E0 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[210] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop115 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop113 = {
-   0x65AD /* first character */
-  ,0x65AD /* last character  */
+   0x65B0 /* first character */
+  ,0x65B0 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[209] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop114 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop112 = {
-   0x6587 /* first character */
-  ,0x6587 /* last character  */
+   0x65AD /* first character */
+  ,0x65AD /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[208] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop113 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop111 = {
-   0x6574 /* first character */
-  ,0x6574 /* last character  */
+   0x6587 /* first character */
+  ,0x6587 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[207] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop112 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop110 = {
-   0x6570 /* first character */
-  ,0x6570 /* last character  */
+   0x6574 /* first character */
+  ,0x6574 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[206] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop111 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop109 = {
-   0x63A5 /* first character */
-  ,0x63A5 /* last character  */
+   0x6570 /* first character */
+  ,0x6570 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[205] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop110 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop108 = {
-   0x6309 /* first character */
-  ,0x6309 /* last character  */
+   0x63A5 /* first character */
+  ,0x63A5 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[204] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop109 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop107 = {
-   0x62E9 /* first character */
-  ,0x62E9 /* last character  */
+   0x6309 /* first character */
+  ,0x6309 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[203] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop108 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop106 = {
-   0x6280 /* first character */
-  ,0x6280 /* last character  */
+   0x62E9 /* first character */
+  ,0x62E9 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[202] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop107 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop105 = {
-   0x627E /* first character */
-  ,0x627E /* last character  */
+   0x6280 /* first character */
+  ,0x6280 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[201] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop106 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop104 = {
-   0x6269 /* first character */
-  ,0x6269 /* last character  */
+   0x627E /* first character */
+  ,0x627E /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[200] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop105 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop103 = {
-   0x6253 /* first character */
-  ,0x6253 /* last character  */
+   0x6269 /* first character */
+  ,0x6269 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[199] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop104 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop102 = {
-   0x624B /* first character */
-  ,0x624B /* last character  */
+   0x6253 /* first character */
+  ,0x6253 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[198] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop103 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop101 = {
-   0x6240 /* first character */
-  ,0x6240 /* last character  */
+   0x624B /* first character */
+  ,0x624B /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[197] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop102 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop100 = {
-   0x6237 /* first character */
-  ,0x6237 /* last character  */
+   0x6240 /* first character */
+  ,0x6240 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[196] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop101 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop99 = {
-   0x6210 /* first character */
-  ,0x6210 /* last character  */
+   0x6237 /* first character */
+  ,0x6237 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[195] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop100 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop98 = {
-   0x606F /* first character */
-  ,0x606F /* last character  */
+   0x6210 /* first character */
+  ,0x6210 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[194] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop99 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop97 = {
-   0x6062 /* first character */
-  ,0x6062 /* last character  */
+   0x606F /* first character */
+  ,0x606F /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[193] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop98 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop96 = {
-   0x603B /* first character */
-  ,0x603B /* last character  */
+   0x6062 /* first character */
+  ,0x6062 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[192] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop97 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop95 = {
-   0x6001 /* first character */
-  ,0x6001 /* last character  */
+   0x603B /* first character */
+  ,0x603B /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[191] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop96 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop94 = {
-   0x5FD7 /* first character */
-  ,0x5FD7 /* last character  */
+   0x6001 /* first character */
+  ,0x6001 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[190] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop95 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop93 = {
-   0x5FAA /* first character */
-  ,0x5FAA /* last character  */
+   0x5FD7 /* first character */
+  ,0x5FD7 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[189] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop94 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop92 = {
-   0x5F8B /* first character */
-  ,0x5F8B /* last character  */
+   0x5FAA /* first character */
+  ,0x5FAA /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[188] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop93 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop91 = {
-   0x5F84 /* first character */
-  ,0x5F85 /* last character  */
-  ,&GUI_FontHZ_Song_12_CharInfo[186] /* address of first character */
+   0x5F8B /* first character */
+  ,0x5F8B /* last character  */
+  ,&GUI_FontHZ_Song_12_CharInfo[187] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop92 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop90 = {
-   0x5F53 /* first character */
-  ,0x5F53 /* last character  */
+   0x5F84 /* first character */
+  ,0x5F85 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[185] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop91 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop89 = {
-   0x5F0F /* first character */
-  ,0x5F0F /* last character  */
+   0x5F53 /* first character */
+  ,0x5F53 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[184] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop90 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop88 = {
-   0x5F00 /* first character */
-  ,0x5F00 /* last character  */
+   0x5F0F /* first character */
+  ,0x5F0F /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[183] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop89 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop87 = {
-   0x5EA6 /* first character */
-  ,0x5EA6 /* last character  */
+   0x5F00 /* first character */
+  ,0x5F00 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[182] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop88 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop86 = {
-   0x5E8F /* first character */
-  ,0x5E8F /* last character  */
+   0x5EA6 /* first character */
+  ,0x5EA6 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[181] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop87 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop85 = {
-   0x5E74 /* first character */
-  ,0x5E74 /* last character  */
+   0x5E8F /* first character */
+  ,0x5E8F /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[180] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop86 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop84 = {
-   0x5E38 /* first character */
-  ,0x5E38 /* last character  */
+   0x5E76 /* first character */
+  ,0x5E76 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[179] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop85 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop83 = {
-   0x5DF2 /* first character */
-  ,0x5DF2 /* last character  */
+   0x5E74 /* first character */
+  ,0x5E74 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[178] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop84 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop82 = {
-   0x5DDE /* first character */
-  ,0x5DDE /* last character  */
+   0x5E38 /* first character */
+  ,0x5E38 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[177] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop83 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop81 = {
-   0x5C55 /* first character */
-  ,0x5C55 /* last character  */
+   0x5DF2 /* first character */
+  ,0x5DF2 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[176] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop82 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop80 = {
-   0x5C31 /* first character */
-  ,0x5C31 /* last character  */
+   0x5DDE /* first character */
+  ,0x5DDE /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[175] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop81 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop79 = {
-   0x5BFC /* first character */
-  ,0x5BFC /* last character  */
+   0x5C55 /* first character */
+  ,0x5C55 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[174] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop80 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop78 = {
-   0x5BC6 /* first character */
-  ,0x5BC6 /* last character  */
+   0x5BFC /* first character */
+  ,0x5BFC /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[173] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop79 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop77 = {
-   0x5BB9 /* first character */
-  ,0x5BB9 /* last character  */
+   0x5BC6 /* first character */
+  ,0x5BC6 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[172] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop78 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop76 = {
-   0x5B9A /* first character */
-  ,0x5B9A /* last character  */
+   0x5BB9 /* first character */
+  ,0x5BB9 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[171] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop77 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop75 = {
-   0x5B8C /* first character */
-  ,0x5B8C /* last character  */
+   0x5B9A /* first character */
+  ,0x5B9A /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[170] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop76 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop74 = {
-   0x5B66 /* first character */
-  ,0x5B66 /* last character  */
+   0x5B8C /* first character */
+  ,0x5B8C /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[169] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop75 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop73 = {
-   0x5B58 /* first character */
-  ,0x5B58 /* last character  */
+   0x5B66 /* first character */
+  ,0x5B66 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[168] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop74 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop72 = {
-   0x59CB /* first character */
-  ,0x59CB /* last character  */
+   0x5B58 /* first character */
+  ,0x5B58 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[167] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop73 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop71 = {
-   0x5931 /* first character */
-  ,0x5931 /* last character  */
+   0x59CB /* first character */
+  ,0x59CB /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[166] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop72 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop70 = {
-   0x5927 /* first character */
-  ,0x5927 /* last character  */
+   0x5931 /* first character */
+  ,0x5931 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[165] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop71 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop69 = {
-   0x590D /* first character */
-  ,0x590D /* last character  */
+   0x5927 /* first character */
+  ,0x5927 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[164] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop70 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop68 = {
-   0x5907 /* first character */
-  ,0x5907 /* last character  */
+   0x590D /* first character */
+  ,0x590D /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[163] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop69 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop67 = {
-   0x5904 /* first character */
-  ,0x5904 /* last character  */
+   0x5907 /* first character */
+  ,0x5907 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[162] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop68 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop66 = {
-   0x58F0 /* first character */
-  ,0x58F0 /* last character  */
+   0x5904 /* first character */
+  ,0x5904 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[161] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop67 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop65 = {
-   0x578B /* first character */
-  ,0x578B /* last character  */
+   0x58F0 /* first character */
+  ,0x58F0 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[160] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop66 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop64 = {
-   0x5757 /* first character */
-  ,0x5757 /* last character  */
+   0x578B /* first character */
+  ,0x578B /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[159] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop65 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop63 = {
-   0x5740 /* first character */
-  ,0x5740 /* last character  */
+   0x5757 /* first character */
+  ,0x5757 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[158] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop64 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop62 = {
-   0x5730 /* first character */
-  ,0x5730 /* last character  */
+   0x5740 /* first character */
+  ,0x5740 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[157] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop63 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop61 = {
-   0x56DE /* first character */
-  ,0x56DE /* last character  */
+   0x5730 /* first character */
+  ,0x5730 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[156] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop62 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop60 = {
-   0x5668 /* first character */
-  ,0x5668 /* last character  */
+   0x56DE /* first character */
+  ,0x56DE /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[155] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop61 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop59 = {
-   0x5546 /* first character */
-  ,0x5546 /* last character  */
+   0x5668 /* first character */
+  ,0x5668 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[154] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop60 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop58 = {
-   0x548C /* first character */
-  ,0x548C /* last character  */
+   0x5546 /* first character */
+  ,0x5546 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[153] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop59 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop57 = {
-   0x544A /* first character */
-  ,0x544A /* last character  */
+   0x548C /* first character */
+  ,0x548C /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[152] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop58 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop56 = {
-   0x5426 /* first character */
-  ,0x5426 /* last character  */
+   0x544A /* first character */
+  ,0x544A /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[151] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop57 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop55 = {
-   0x5411 /* first character */
-  ,0x5411 /* last character  */
+   0x5426 /* first character */
+  ,0x5426 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[150] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop56 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop54 = {
-   0x540D /* first character */
-  ,0x540D /* last character  */
+   0x5411 /* first character */
+  ,0x5411 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[149] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop55 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop53 = {
-   0x53F7 /* first character */
-  ,0x53F8 /* last character  */
-  ,&GUI_FontHZ_Song_12_CharInfo[147] /* address of first character */
+   0x540D /* first character */
+  ,0x540D /* last character  */
+  ,&GUI_FontHZ_Song_12_CharInfo[148] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop54 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop52 = {
-   0x53E3 /* first character */
-  ,0x53E3 /* last character  */
+   0x53F7 /* first character */
+  ,0x53F8 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[146] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop53 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop51 = {
-   0x53D6 /* first character */
-  ,0x53D6 /* last character  */
+   0x53E3 /* first character */
+  ,0x53E3 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[145] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop52 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop50 = {
-   0x53C2 /* first character */
-  ,0x53C2 /* last character  */
+   0x53D6 /* first character */
+  ,0x53D6 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[144] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop51 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop49 = {
-   0x538B /* first character */
-  ,0x538B /* last character  */
+   0x53C2 /* first character */
+  ,0x53C2 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[143] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop50 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop48 = {
-   0x5370 /* first character */
-  ,0x5370 /* last character  */
+   0x538B /* first character */
+  ,0x538B /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[142] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop49 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop47 = {
-   0x5361 /* first character */
-  ,0x5361 /* last character  */
+   0x5370 /* first character */
+  ,0x5370 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[141] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop48 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop46 = {
-   0x5355 /* first character */
-  ,0x5355 /* last character  */
+   0x5361 /* first character */
+  ,0x5361 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[140] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop47 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop45 = {
-   0x533A /* first character */
-  ,0x533A /* last character  */
+   0x5355 /* first character */
+  ,0x5355 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[139] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop46 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop44 = {
-   0x5316 /* first character */
-  ,0x5316 /* last character  */
+   0x533A /* first character */
+  ,0x533A /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[138] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop45 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop43 = {
-   0x52A8 /* first character */
-  ,0x52A8 /* last character  */
+   0x5316 /* first character */
+  ,0x5316 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[137] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop44 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop42 = {
-   0x52A1 /* first character */
-  ,0x52A1 /* last character  */
+   0x52A8 /* first character */
+  ,0x52A8 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[136] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop43 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop41 = {
-   0x529F /* first character */
-  ,0x529F /* last character  */
+   0x52A1 /* first character */
+  ,0x52A1 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[135] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop42 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop40 = {
-   0x5269 /* first character */
-  ,0x5269 /* last character  */
+   0x529F /* first character */
+  ,0x529F /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[134] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop41 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop39 = {
-   0x524D /* first character */
-  ,0x524D /* last character  */
+   0x5269 /* first character */
+  ,0x5269 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[133] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop40 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop38 = {
-   0x5236 /* first character */
-  ,0x5236 /* last character  */
+   0x524D /* first character */
+  ,0x524D /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[132] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop39 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop37 = {
-   0x5230 /* first character */
-  ,0x5230 /* last character  */
+   0x5236 /* first character */
+  ,0x5236 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[131] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop38 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop36 = {
-   0x521D /* first character */
-  ,0x521D /* last character  */
+   0x5230 /* first character */
+  ,0x5230 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[130] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop37 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop35 = {
-   0x5219 /* first character */
-  ,0x5219 /* last character  */
+   0x521D /* first character */
+  ,0x521D /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[129] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop36 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop34 = {
-   0x5206 /* first character */
-  ,0x5206 /* last character  */
+   0x5219 /* first character */
+  ,0x5219 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[128] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop35 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop33 = {
-   0x51FA /* first character */
-  ,0x51FA /* last character  */
+   0x5206 /* first character */
+  ,0x5206 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[127] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop34 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop32 = {
-   0x51C6 /* first character */
-  ,0x51C6 /* last character  */
+   0x51FA /* first character */
+  ,0x51FA /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[126] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop33 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop31 = {
-   0x518C /* first character */
-  ,0x518C /* last character  */
+   0x51C6 /* first character */
+  ,0x51C6 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[125] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop32 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop30 = {
-   0x5185 /* first character */
-  ,0x5185 /* last character  */
+   0x518C /* first character */
+  ,0x518C /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[124] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop31 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop29 = {
-   0x5173 /* first character */
-  ,0x5173 /* last character  */
+   0x5185 /* first character */
+  ,0x5185 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[123] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop30 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop28 = {
-   0x516C /* first character */
-  ,0x516C /* last character  */
+   0x5173 /* first character */
+  ,0x5173 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[122] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop29 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop27 = {
-   0x5165 /* first character */
-  ,0x5165 /* last character  */
+   0x516C /* first character */
+  ,0x516C /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[121] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop28 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop26 = {
-   0x50A8 /* first character */
-  ,0x50A8 /* last character  */
+   0x5165 /* first character */
+  ,0x5165 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[120] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop27 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop25 = {
-   0x505C /* first character */
-  ,0x505C /* last character  */
+   0x50A8 /* first character */
+  ,0x50A8 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[119] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop26 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop24 = {
-   0x503C /* first character */
-  ,0x503C /* last character  */
+   0x505C /* first character */
+  ,0x505C /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[118] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop25 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop23 = {
-   0x4FE1 /* first character */
-  ,0x4FE1 /* last character  */
+   0x503C /* first character */
+  ,0x503C /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[117] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop24 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop22 = {
-   0x4FDD /* first character */
-  ,0x4FDD /* last character  */
+   0x4FE1 /* first character */
+  ,0x4FE1 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[116] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop23 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop21 = {
-   0x4F59 /* first character */
-  ,0x4F59 /* last character  */
+   0x4FDD /* first character */
+  ,0x4FDD /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[115] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop22 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop20 = {
-   0x4F4D /* first character */
-  ,0x4F4D /* last character  */
+   0x4F59 /* first character */
+  ,0x4F59 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[114] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop21 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop19 = {
-   0x4F18 /* first character */
-  ,0x4F18 /* last character  */
+   0x4F4D /* first character */
+  ,0x4F4D /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[113] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop20 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop18 = {
-   0x4EFD /* first character */
-  ,0x4EFD /* last character  */
+   0x4F18 /* first character */
+  ,0x4F18 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[112] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop19 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop17 = {
-   0x4EFB /* first character */
-  ,0x4EFB /* last character  */
+   0x4EFD /* first character */
+  ,0x4EFD /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[111] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop18 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop16 = {
-   0x4EF6 /* first character */
-  ,0x4EF6 /* last character  */
+   0x4EFB /* first character */
+  ,0x4EFB /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[110] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop17 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop15 = {
-   0x4ECE /* first character */
-  ,0x4ECE /* last character  */
+   0x4EF6 /* first character */
+  ,0x4EF6 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[109] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop16 /* pointer to next GUI_FONT_PROP */
 };
@@ -6677,43 +6632,43 @@ GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop10 = {
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop9 = {
-   0x4E2D /* first character */
-  ,0x4E2D /* last character  */
+   0x4E32 /* first character */
+  ,0x4E32 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[102] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop10 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop8 = {
-   0x4E0D /* first character */
-  ,0x4E0D /* last character  */
+   0x4E2D /* first character */
+  ,0x4E2D /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[101] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop9 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop7 = {
-   0x4E0B /* first character */
-  ,0x4E0B /* last character  */
+   0x4E0D /* first character */
+  ,0x4E0D /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[100] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop8 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop6 = {
-   0x4E00 /* first character */
-  ,0x4E00 /* last character  */
+   0x4E0B /* first character */
+  ,0x4E0B /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[ 99] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop7 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop5 = {
-   0x3002 /* first character */
-  ,0x3002 /* last character  */
+   0x4E00 /* first character */
+  ,0x4E00 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[ 98] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop6 /* pointer to next GUI_FONT_PROP */
 };
 
 GUI_CONST_STORAGE GUI_FONT_PROP GUI_FontHZ_Song_12_Prop4 = {
-   0x2026 /* first character */
-  ,0x2026 /* last character  */
+   0x3002 /* first character */
+  ,0x3002 /* last character  */
   ,&GUI_FontHZ_Song_12_CharInfo[ 97] /* address of first character */
   ,&GUI_FontHZ_Song_12_Prop5 /* pointer to next GUI_FONT_PROP */
 };

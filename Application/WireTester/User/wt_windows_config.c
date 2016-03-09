@@ -46,6 +46,7 @@ extern uint8_t WT_Config_Read(void);
 extern uint8_t WT_Config_Save(void);
 extern uint8_t WT_Config_Restore(void);
 extern WM_HWIN Create_PasswdDlgWindow(WM_HWIN hWin_para);
+extern void WT_UART_COM1_Init(void);
 /*********************************************************************
 *
 *       Static data
@@ -189,6 +190,8 @@ K_ModuleItem_Typedef  wt_setting =
 #define ID_TEXT_CAPTIAL    			(GUI_ID_USER + 0x62)
 #define ID_DROPDOWN_CAPTIAL     (GUI_ID_USER + 0x63)
 
+#define ID_TEXT_PRINTMODE    		(GUI_ID_USER + 0x64)
+#define ID_DROPDOWN_PRINTMODE   (GUI_ID_USER + 0x65)
 /*********************************************************************
 *
 *       _aDialog
@@ -244,6 +247,8 @@ static const GUI_WIDGET_CREATE_INFO _aDialogSystemSettings[] = {
   { DROPDOWN_CreateIndirect, "dropdown-audiong", ID_DROPDOWN_AUDIONG, 80, 130, 80, 20, 0, 0x0, 0 },
 	{ TEXT_CreateIndirect, "本地打印", ID_TEXT_PRINT, 240, 10, 60, 20, 0, 0x0, 0 },
 	{ DROPDOWN_CreateIndirect, "dropdown-lang", ID_DROPDOWN_LANG, 300, 10, 80, 20, 0, 0x0, 0 },
+	{ TEXT_CreateIndirect, "打印模式", ID_TEXT_PRINTMODE, 240, 50, 60, 20, 0, 0x0, 0 },
+	{ DROPDOWN_CreateIndirect, "print-mode", ID_DROPDOWN_PRINTMODE, 300, 50, 80, 20, 0, 0x0, 0 },
 
 
 };
@@ -834,6 +839,16 @@ static void _cbSystemSettings(WM_MESSAGE * pMsg) {
     DROPDOWN_AddString(hItem, "是");
 		DROPDOWN_SetSel(hItem,WT_Config.Print);	
 		
+		//打印方式
+	  hItem = WM_GetDialogItem(pMsg->hWin, ID_TEXT_PRINTMODE);
+    TEXT_SetTextAlign(hItem, GUI_TA_LEFT | GUI_TA_VCENTER);
+    TEXT_SetFont(hItem,&GUI_FontHZ_Song_12);
+		hItem = WM_GetDialogItem(pMsg->hWin, ID_DROPDOWN_PRINTMODE);
+		DROPDOWN_SetFont(hItem,&GUI_FontHZ_Song_12);
+    DROPDOWN_AddString(hItem, "并口打印");
+    DROPDOWN_AddString(hItem, "串口打印");
+		DROPDOWN_SetSel(hItem,WT_Config.Print_Mode);	
+		
     break;
 	case	MY_MESSAGE_WHEEL://处理滚轮事件
 			hItem = WM_GetDialogItem(pMsg->hWin, ID_SLIDER_LIGHT);
@@ -982,6 +997,20 @@ static void _cbSystemSettings(WM_MESSAGE * pMsg) {
 				DROPDOWN_SetSel(hItem,0);		
 				WT_Config.AudioNG = 4;
 				osMessagePut(UartAudioEvent, UartAudioNG_TX_Event, 0);	//播放声音
+			}						
+		}
+		
+		hItem = WM_GetDialogItem(pMsg->hWin, ID_DROPDOWN_PRINTMODE);
+		if(WM_HasFocus(hItem))//选择打印模式
+		{
+			sel=DROPDOWN_GetSel(hItem);
+			if(sel<1)
+			{
+				DROPDOWN_IncSel(hItem);
+			}					
+			else //sel>=1 
+			{
+				DROPDOWN_SetSel(hItem,0);		
 			}						
 		}
 		
@@ -1682,6 +1711,7 @@ static void Startup(WM_HWIN hWin, uint16_t xpos, uint16_t ypos)
 	
 	WM_HWIN hItem_passwd;
 	WM_HWIN hItem_Testrule;
+	WM_HWIN hItem_printmode;
 
 	uint32_t i;
 	uint32_t index=0;
@@ -1736,6 +1766,7 @@ static void Startup(WM_HWIN hWin, uint16_t xpos, uint16_t ypos)
 	
 	hItem_passwd = WM_GetDialogItem(hWin,ID_EDIT_PASSWD);
 	hItem_Testrule = WM_GetDialogItem(hWin,ID_DROPDOWN_TESTRULE);
+	hItem_printmode = WM_GetDialogItem(hWin,ID_DROPDOWN_PRINTMODE);
 	 
 	goto normal_loop;
 	passwd_auth:
@@ -1921,6 +1952,8 @@ static void Startup(WM_HWIN hWin, uint16_t xpos, uint16_t ypos)
 					WT_Config.AudioOK = DROPDOWN_GetSel(hItem_audiook);
 					WT_Config.AudioNG = DROPDOWN_GetSel(hItem_audiong)+4;
 					WT_Config.Print = DROPDOWN_GetSel(hItem_Lang);	
+					WT_Config.Print_Mode = DROPDOWN_GetSel(hItem_printmode);
+					WT_UART_COM1_Init();
 					//strcpy((char *)WT_Config.Passwd,EDIT_GetText(hItem_passwd));
 					
 				}
@@ -1986,6 +2019,7 @@ static void Startup(WM_HWIN hWin, uint16_t xpos, uint16_t ypos)
 					 set_systemtime(sec,min,hour,day,month,year);
 					 EDIT_SetText(hItem_passwd,(const char *)WT_Config.Passwd);
 					 DROPDOWN_SetSel(hItem_Testrule,WT_Config.TestRule);
+					 DROPDOWN_SetSel(hItem_printmode,WT_Config.Print_Mode);
 				}
 			}				
 		}

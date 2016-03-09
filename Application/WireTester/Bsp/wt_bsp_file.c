@@ -51,6 +51,7 @@
 extern void get_systemtime(char *time);
 extern void get_system_time(char * date ,char * time);
 extern char *itoa(int num, char *str, int radix);
+extern char str_mode[20];
 
 #define IO_MAXSIZE  200
 
@@ -1732,7 +1733,7 @@ uint8_t WT_PrintFiles_Init(char * filename, char * wire_mode)
 	uint8_t  read_delay = 0;
 	char *str_div1 = "$Y.m.d$";
 	char *str_div2 = "@h:m:s@";
-	char *str_div3 = "@model@";
+//	char *str_div3 = "@model@";
 	char date_replace[20];
 	char time_replace[20];
 	
@@ -1760,7 +1761,7 @@ uint8_t WT_PrintFiles_Init(char * filename, char * wire_mode)
 					get_system_time(date_replace,time_replace);
 					StrReplace((char *)PrintFile.PrintFilestr,str_div1,date_replace,PrintFile.sum_str);
 					StrReplace((char *)PrintFile.PrintFilestr,str_div2,time_replace,PrintFile.sum_str);
-					StrReplace((char *)PrintFile.PrintFilestr,str_div3,wire_mode,PrintFile.sum_str);
+				//	StrReplace((char *)PrintFile.PrintFilestr,str_div3,wire_mode,PrintFile.sum_str);
 					PrintFile.sum_str = strlen((char *)PrintFile.PrintFilestr);
 					break;
 				}
@@ -1904,211 +1905,61 @@ uint8_t WT_TestFiles_Write(uint8_t * path, uint8_t * data)
 
 }
 
-
 /**
-  * @brief  读取测试文件，每次读取200字节，并存到Flash
+  * @brief  读取打印文件，每次读取200字节，并存到Flash
   * @param  None
   * @retval 0-ok, 1-hardware error, 2-file operate error, 
   */
-uint8_t WT_TestFile_Write2Flash (char * filename)
+uint8_t WT_PrintFile_Write2Flash (void)
 {
-	FRESULT res;
-	FIL file;
-	char str[100];
 	char line[IO_MAXSIZE];
 	uint32_t i=0;
 	uint16_t len=0;
-	uint32_t buf32;
 	uint8_t length[2];
-	char file_name[50];
 	
-	memset(file_name,0,50);
-	strncpy(file_name,filename,(strlen(filename)-4));
-	
-	if(k_StorageGetStatus(USB_DISK_UNIT) || k_StorageGetStatus(MSD_DISK_UNIT))
+	len = PrintFile.number_Cmdline;
+	length[0] = len >> 8;
+	length[1] = len & 0xFF;
+	FM25V_IO_Write(length,0,2);//头两个字节保存字节长度
+	FM25V_IO_Write((uint8_t *)str_mode,2,20);//20个字节保存线束型号
+	for(i=0;i<len;i++)
 	{
-		if(store_dev == 0) strcpy (str,(char *)path_testfile);
-		if(store_dev == 1) strcpy (str,(char *)path_testfile_sd);
-		strcat (str,"/");
-		strcat (str,filename);
-
-		//open file
-		res = f_open(&file, str, FA_OPEN_EXISTING | FA_READ);
-		if (res == FR_OK)
-		{		
-			len = (f_size(&file)/IO_MAXSIZE)+1;
-			length[0] = len >> 8;
-			length[1] = len & 0xFF;
-			FM25V_IO_Write(length,0,2);//头两个字节保存字节长度
-			FM25V_IO_Write((uint8_t *)file_name,2,50);//50个字节保存文件名
-			for(i=0;i<len;i++)
-			{
-				res = f_lseek(&file, i*IO_MAXSIZE); 
-				if (res == FR_OK)
-				{
-					memset(line,0,IO_MAXSIZE);
-					f_read(&file,line,IO_MAXSIZE,&buf32);
-					FM25V_IO_Write((uint8_t *)line,(52+i*IO_MAXSIZE),IO_MAXSIZE);
-				}
-			}
-			return 0;
-		}
-		else return 2;
+			memset(line,0,IO_MAXSIZE);
+			strcpy(line,(char *)PrintFile.PrintFilestr+i*IO_MAXSIZE);
+			FM25V_IO_Write((uint8_t *)line,(22+i*IO_MAXSIZE),IO_MAXSIZE);
 	}
-	else return 1;
+	return 0;
+
 }
 
 
 /**
-  * @brief  读取Flash数据,每次读200字节，写入文件到SD卡
+  * @brief  读取Flash数据,每次读200字节
   * @param  None
   * @retval 0-ok, 1-hardware error, 2-file operate error, 
   */
-uint8_t WT_TestFile_Write2SD(uint8_t * path)
+uint8_t WT_PrintFile_ReadFlash(void)
 {
-	FRESULT res;
-	DIR 		 dir;
-	FILINFO  fno;
-	FIL			 fil;
-	char *	 fn;
-	uint8_t  *p, *fn_filename;
-	uint8_t  buf8[60];
 	uint32_t i=0;
 	uint16_t len=0;
-	uint32_t buf32;
 	uint8_t line[IO_MAXSIZE];
 	uint8_t tmp[2];
 	
-	// Check disc
-	if(k_StorageGetStatus(USB_DISK_UNIT) == 0 && store_dev == 0)	//no usb or SD
-	{
-		return 1;
-	}
-	
-	if(k_StorageGetStatus(MSD_DISK_UNIT) == 0 && store_dev == 1)	//no usb or SD
-	{
-		return 1;
-	}
-	
-	// 判断文件夹是否村存在，不存在则创建	
-  if(store_dev == 0) res = f_opendir(&dir, path_studyfile);
-	if(store_dev == 1) res = f_opendir(&dir, path_studyfile_sd);
-  if(res == FR_NO_PATH)	//目录不存在，创建目录
-	{
-		p = path;
-		for(;(*p)!=0;p++)
-		{
-			if(*p == '/')
-			{
-				for(i=0;i<(p-path);i++) buf8[i]=*(path+i);
-				buf8[i] = 0;
-				res = f_mkdir((const TCHAR*) buf8);
-				if((res != 0)&&(res != FR_EXIST)) {return 2;}
-			}
-		}
-		//open the new dir
-		res = f_opendir(&dir, path_studyfile);
-		if(res != FR_OK) return 1;
-	}
-	else if (res != FR_OK)
-  {
-		return 1;
-	}
-	
-	// 判断文件是否村存在 
-	#if _USE_LFN
-  static char lfn[_MAX_LFN];
-  fno.lfname = lfn;
-  fno.lfsize = sizeof(lfn);
-	#endif
-	
-	p = path;
-	i = 0;
-	for(;(*p)!=0;p++)
-	{
-		if(*p == '.')
-		{
-			p--;
-			for(;(*p)!='/';p--)
-			{
-				i++;
-				if(i>50) return 2;
-			}
-			p++;
-			break;
-		}
-	}
-	fn_filename = p;
-	i = 0;	//0:ok, 1:error, 
-	
-	for (;;) 
-	{
-		res = f_readdir(&dir, &fno);                   /* Read a directory item */
-		if (res != FR_OK || fno.fname[0] == 0) break;  /* Break on error or end of dir */
-		if (fno.fname[0] == '.') continue;             /* Ignore dot entry */
-		#if _USE_LFN
-		fn = *fno.lfname ? fno.lfname : fno.fname;
-		#else
-		fn = fno.fname;
-		#endif
-		if (fno.fattrib & AM_DIR) continue;  /* It is a directory */
-		else /* It is a file. */
-		{
-			// compare filename & new filename
-			p = fn_filename;
-			while(*fn != 0)
-			{
-				if(*fn++ != *p++)
-				{
-					i = 1;
-					break;
-				}
-				if(i == 1) break;
-			}
-			
-			if((i == 0) && (*p == 0))	//fine the same filename
-			{
-				i = 1;
-				break;
-			}
-			else	//no filename
-			{
-				i=0;
-			}
-		}
-	}
-	f_closedir(&dir); //关闭文件夹
-
-	//存在文件，处理
-	if(i==1)	//文件已存在，返回、重命名、删除等操作
-	{
-		//return 3;
-		res = f_unlink((const TCHAR*)path);
-		if(res != 0) return 2;
-	}
-	
-	//保存学习文件
-	res = f_open(&fil, (const TCHAR*)path, FA_OPEN_ALWAYS | FA_WRITE); //可写方式打开 没有文件则创建 
-	if(res)
-	{
-		f_close(&fil);
-		return 2;
-	}
-
-	res = f_lseek(&fil, f_size(&fil)); 
-	if(res != FR_OK) return 2;
-	
 	FM25V_IO_Read(tmp,0,2);
+	FM25V_IO_Read((uint8_t *)str_mode,2,20);
 	len = (tmp[0] << 8 ) + tmp[1];
 	for(i=0;i<len;i++)
 	{
-		FM25V_IO_Read(line,52+i*IO_MAXSIZE,IO_MAXSIZE);
-		res = f_write(&fil, line, IO_MAXSIZE, &buf32); 
-		if(res != 0) return 2;
+		FM25V_IO_Read(line,22+i*IO_MAXSIZE,IO_MAXSIZE);
+		if(i==0)
+		strcpy((char *)PrintFile.PrintFilestr,(char *)line);
+		else
+		strcat((char *)PrintFile.PrintFilestr,(char *)line);
 	}
+	
+	PrintFile.sum_str = strlen((char *)PrintFile.PrintFilestr);
+	PrintFile.number_Cmdline = PrintFile.sum_str/100 +1;
 
-	//Save to file
-	f_close(&fil);
 	return 0;
 }
 

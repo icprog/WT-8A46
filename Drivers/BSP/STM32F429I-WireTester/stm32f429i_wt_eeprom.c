@@ -314,7 +314,7 @@ uint8_t WT_Config_Restore(void)
 	WT_Config.Mode_TestCap = 0; //电容阈值, 0:0.1uF, 1:0.47uF, 2:1.0uF, 3:4.7uF; 
 	
 	WT_Config.StudyMode = 0; //自学习模式, 0:导通, 1:导通+电阻
-	WT_Config.Print_ID = 0; //打印文件索引	
+	WT_Config.Print_Mode = 0; //打印方式，0：并口打印 1：串口打印
 	
 	//Update
 	LCD_BackLight_SetPWM(WT_Config.BackLight);
@@ -555,40 +555,40 @@ uint8_t WT_Config_StudyMode_Save(void)
   * @param  None.
   * @retval 0-ok, 1-error
   */
-uint8_t WT_Config_PrintID_Read(void)
-{
-	uint8_t res;
-	uint8_t buf8[2];
-	
-	res = BSP_EEPROM_ReadBuffer(buf8, E2PROM_ADDR_WT_CONFIG + 65, 1);
-	
-	if(res == 0)
-	{
-		WT_Config.Print_ID = buf8[0];			//0:unlock  FE:lock
-		WT_Config_PrintID_Save();
-		return 0;
-	}
-	else
-	{
-		return 1;
-	}
-}
+//uint8_t WT_Config_PrintID_Read(void)
+//{
+//	uint8_t res;
+//	uint8_t buf8[2];
+//	
+//	res = BSP_EEPROM_ReadBuffer(buf8, E2PROM_ADDR_WT_CONFIG + 65, 1);
+//	
+//	if(res == 0)
+//	{
+//		WT_Config.Print_Mode = buf8[0];			//0：并口打印 1：串口打印
+//		WT_Config_PrintID_Save();
+//		return 0;
+//	}
+//	else
+//	{
+//		return 1;
+//	}
+//}
 
-/**
-  * @brief  Save PrintID
-  * @param  None.
-  * @retval 0-ok, 1-error
-  */
-uint8_t WT_Config_PrintID_Save(void)
-{
-	uint8_t res;
-	uint8_t * p;
-	
-	p = (uint8_t *) &WT_Config.Print_ID;
-	res = BSP_EEPROM_WriteBuffer(p, E2PROM_ADDR_WT_CONFIG + 65, 1);
-	if(res == 0) 	return 0;
-	else					return 1;
-}
+///**
+//  * @brief  Save PrintID
+//  * @param  None.
+//  * @retval 0-ok, 1-error
+//  */
+//uint8_t WT_Config_PrintID_Save(void)
+//{
+//	uint8_t res;
+//	uint8_t * p;
+//	
+//	p = (uint8_t *) &WT_Config.Print_Mode;
+//	res = BSP_EEPROM_WriteBuffer(p, E2PROM_ADDR_WT_CONFIG + 65, 1);
+//	if(res == 0) 	return 0;
+//	else					return 1;
+//}
 
 //void WT_Test(void)
 //{

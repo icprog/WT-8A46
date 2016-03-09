@@ -22,8 +22,10 @@
 static void WT_UART_COM1_Rx_IT(uint8_t dat);
 static void UART_COM1_Buffer_RxClear(void);
 static void UartCOM1_RX_Process(void);
+static void UartCOM1_Serial_print(void);
 
 extern void get_system_time(char * date ,char * time);
+extern char str_mode[20];
 /**
   * @brief  wire self check task
   * @param  argument: pointer that is passed to the thread function as start argument.
@@ -55,8 +57,16 @@ void UARTCOM1Thread(void const * argument)
 					UartCOM1_RX_Process();
 					break;
 				
-				case UartCOM1_TX_Event:		
-					UartCOM1_Send_StartPrint_Cmd();		
+				case UartCOM1_TX_Event:	
+					if(WT_Config.Print_Mode == 0)//并口打印
+					{						
+						UartCOM1_Send_StartPrint_Cmd();		
+					}
+					else  //串口打印
+					{
+						UartCOM1_Serial_print();
+					}
+					
 					break;
 				
 				default:
@@ -84,7 +94,8 @@ void WT_UART_COM1_Init(void)
 	UART_COM1_Cnt_Buffer_Rx = 0;
 
   UartHandle_COM1.Instance        = UART_COM1;
-  UartHandle_COM1.Init.BaudRate   = 375000;
+	if(WT_Config.Print_Mode == 1) UartHandle_COM1.Init.BaudRate   = 9600;
+  else UartHandle_COM1.Init.BaudRate   = 9600;
   UartHandle_COM1.Init.WordLength = UART_WORDLENGTH_8B;
   UartHandle_COM1.Init.StopBits   = UART_STOPBITS_1;
   UartHandle_COM1.Init.Parity     = UART_PARITY_NONE;
@@ -301,11 +312,19 @@ static void Update_Print_Time()
 	memset(date_replace,0,20);
 	memset(time_replace,0,20);
 	get_system_time(date_replace,time_replace);
+	for(i=0;i<10;i++)
+	{
+		PrintFile.PrintFilestr[63+i] = date_replace[i];
+	}
 	for(i=0;i<8;i++)
 	{
 		PrintFile.PrintFilestr[76+i] = time_replace[i];
 	}
-  
+	//替换型号
+	for(i=0;i<11;i++)
+	{
+		PrintFile.PrintFilestr[133+i] = str_mode[i];
+	}
 	
 	
 }
@@ -470,4 +489,16 @@ static void UartCOM1_RX_Process(void)
 	
 	// clear rx buffer
 	UART_COM1_Buffer_RxClear();
+}
+
+/**
+  * @brief  UartCOM1_Serial_print
+  * @param  None
+  * @retval None
+  */
+static void UartCOM1_Serial_print(void)
+{
+	Update_Print_Time();
+	/****** Send ***********************************************************/
+	WT_UART_COM1_WrBuf(PrintFile.PrintFilestr, PrintFile.sum_str);
 }
